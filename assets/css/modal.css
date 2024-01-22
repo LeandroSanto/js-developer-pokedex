@@ -1,0 +1,221 @@
+.modalAnchor{
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBackground{ 
+  background-color: rgba(0,0,0,.1);
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+
+  
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3rem;
+}
+
+.modalTitle{
+  display: flex;
+  flex-direction: column;
+}
+.modalTitle ol {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: -15px;
+  list-style: none;
+  border-color: rgb(44, 223, 223);
+  padding: 0;
+  margin: 0;
+  margin-top: -20px;
+  border-radius: 3rem;
+
+  
+}
+.modalTitle li {
+  color: #fff;
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 1px;
+  filter: brightness(1.1);
+  text-align: center;
+
+ 
+}
+ 
+.modalHeader {
+  display: flex;
+  flex-direction: row; 
+  justify-content:space-between;
+  padding: 2rem;
+  
+}
+.modalHeader h1{
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 900;
+  font-style: bold;
+}
+.modalHeader span{
+  color: #000;
+  opacity: .3;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.modalSuperior{
+
+  
+}
+
+.modalInferior{
+  background-color: #f5f5f6;
+  
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius:  3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modalImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  -100px auto;
+  max-width: 8rem;
+  height: 8rem;
+
+}
+
+
+
+.modalContentOl{
+  margin-left: 25px;
+
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+
+  text-transform: capitalize;
+}
+
+.modalContentOl ol {
+  padding: 1.2rem;
+  max-height: 150px;
+  
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  
+}
+
+/* Estilização das Abas */
+
+.modalTabs{
+  margin-top: 130px;
+}
+
+/* Estilos para as abas */
+
+.tabs {
+  display: flex;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 20px;
+  background-color: #eeeeee5e;
+  border: none;
+  cursor: pointer;
+
+  border-radius: .8rem .8rem 0 0 ;
+
+  text-transform: capitalize;
+}
+
+.tab-button.active {
+  background-color: #ccc;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-content{
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modalContent{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+
+  text-transform: capitalize;
+}
+
+
+.tab-content ol{
+  list-style: none;
+  font-size: medium;
+  margin-left: -30px;
+  margin-top: -5px;
+  
+}
+.modalFooter{
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  
+}
+  
+.close-button {
+  width: 100px;
+   
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  border: none;
+  border-radius: 1rem;
+  
+  color: #fff;
+  background-color: #6c79db;
+}
+
+.statusBar{
+  height: 8px;
+  background: linear-gradient(to right, #ff0000 0%, #ff0000 50%, #00ff00 50%, #00ff00 100%);
+  /* Substitua as cores (#ff0000 e #00ff00) conforme necessário */
+  width: var(--porcentagem, 50%);
+}
